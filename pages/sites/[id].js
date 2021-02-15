@@ -30,9 +30,6 @@ export const getStaticProps = async (context) => {
 const SitePage = ({ site }) => {
 	return (
 		<>
-			<Link href='/sites'>
-				<a>Back</a>
-			</Link>
 			<Site site={site} />
 		</>
 	);

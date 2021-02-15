@@ -2,9 +2,12 @@ import Link from 'next/link';
 
 const Sites = ({ sites }) => {
 	return (
-		<ul>
+		<ul className='list-group'>
 			{sites.map((site) => (
-				<li key={site.id}>
+				<li
+					key={site.id}
+					className='list-group-item list-group-item-action'
+				>
 					<Link href={`/sites/${site.id}`}>
 						<a>{site.name}</a>
 					</Link>
